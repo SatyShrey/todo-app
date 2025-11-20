@@ -82,7 +82,7 @@ export const Provider = ({ children }: childrenProps) => {
         if (data) {
             settodos(JSON.parse(data))
         }
-     setTimeout(()=>{setloaded(true)},1000)
+     setloaded(true)
     }
     useEffect(() => {
         fetchData();
